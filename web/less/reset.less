@@ -1,0 +1,73 @@
+/* 代替base.css作为清除默认样式less */
+@charset "utf-8";
+
+// 清除默认样式
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+//超链接
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+// hover效果
+.mouse-hover:hover {
+    text-decoration: underline;
+}
+
+// 清除浮动
+.clearfix() {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    *zoom: 1;
+}
+
+//超出隐藏
+.elli() {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+// 字体
+.SimSun() {
+    font-family: "SimSun"; // 宋体
+}
+
+.SimHei() {
+    font-family: "SimHei"; // 黑体
+}
+
+.Yahei() {
+    font-family: "Microsoft Yahei"; // 微软雅黑
+}
+
+.JhengHei() {
+    font-family: "Microsoft JhengHei"; // 微软正黑体
+}
+
+.KaiTi() {
+    font-family: "KaiTi"; // 楷体
+}
+
+.NSimSun() {
+    font-family: "NSimSun"; // 新宋体
+}
+
+.FangSong() {
+    font-family: "FangSong"; // 仿宋
+}
