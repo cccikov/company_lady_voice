@@ -1,0 +1,11 @@
+{
+  "name": "c-code",
+  "version": "1.0.0",
+  "description": "aa project",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ccc",
+  "license": "ISC"
+}
