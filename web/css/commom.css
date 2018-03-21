@@ -20,4 +20,40 @@ li {
 }
 html {
   background: #dfdfdf;
+  font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+.design {
+  max-width: 100%;
+}
+.top {
+  position: relative;
+  min-height: 46px;
+  line-height: 46px;
+  padding: 1px 0;
+  color: #fff;
+  background: linear-gradient(90deg, #a586ff, #7b4eff);
+  text-align: center;
+  *zoom: 1;
+}
+.top:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.top .intro {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  line-height: 46px;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 13px;
+}
+#wrap .list-bottom {
+  line-height: 30px;
+  padding: 0 0 20px;
+  text-align: center;
+  background: inherit;
+  color: #9d9d9d;
+  font-size: 10px;
 }

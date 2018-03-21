@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* 代替base.css作为清除默认样式less */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+.mouse-hover:hover {
+  text-decoration: underline;
+}
+html {
+  background: #dfdfdf;
+  font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+.design {
+  max-width: 100%;
+}
+.top {
+  position: relative;
+  min-height: 46px;
+  line-height: 46px;
+  padding: 1px 0;
+  color: #fff;
+  background: linear-gradient(90deg, #a586ff, #7b4eff);
+  text-align: center;
+  *zoom: 1;
+}
+.top:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.top .intro {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  line-height: 46px;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 13px;
+}
+#wrap .list-bottom {
+  line-height: 30px;
+  padding: 0 0 20px;
+  text-align: center;
+  background: inherit;
+  color: #9d9d9d;
+  font-size: 10px;
+}
+.main ul li {
+  padding: 8px 0;
+  border-top: 1px solid #dedede;
+  background: #fff;
+  *zoom: 1;
+}
+.main ul li:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.main ul li .list-left {
+  float: left;
+}
+.main ul li .list-left i {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin: 0 8px;
+  background: url(../img/test.png) center / contain no-repeat;
+  /* Chrome, Opera */
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=2, MakeShadow=false);
+  /* IE6~IE9 */
+}
+.main ul li .list-left i.man {
+  float: left;
+}
+.main ul li .list-left i.woman {
+  float: right;
+}
+.main ul li .list-left a {
+  display: inline-block;
+  overflow: hidden;
+  width: 46px;
+  line-height: 22px;
+  padding: 0 0 0 26px;
+  border-radius: 100px;
+  margin: 15px 0 0;
+  color: #91a7d6;
+  background: #e3e3e3 url(../img/listen.png) left center / contain no-repeat;
+}
+.main ul li .list-right {
+  float: right;
+  text-align: center;
+  padding: 10px 8px 0 0;
+}
+.main ul li .list-right a {
+  line-height: 22px;
+  color: #afafaf;
+  font-size: 12px;
+}
+.main ul li .list-right a:before {
+  content: "";
+  display: block;
+  height: 18px;
+  width: 30px;
+  background: url(../img/like.png) center / contain no-repeat;
+}
+.main ul li .list-right a.active:before {
+  color: #532789;
+  background: url(../img/like_active.png) center / contain no-repeat;
+}
+.main ul li .list-middle {
+  overflow: hidden;
+  height: 50px;
+}
+.main ul li .list-middle a {
+  float: left;
+  line-height: 20px;
+  padding: 0 5px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  margin: 2px;
+  font-size: 12px;
+  color: #666;
+}
+.main ul li .list-middle a.color1 {
+  color: #7ebeff;
+  border-color: #7ebeff;
+}
+.main ul li .list-middle a.color2 {
+  color: #ff7474;
+  border-color: #ff7474;
+}
+.main ul li .list-middle a.color3 {
+  color: #67c2be;
+  border-color: #67c2be;
+}

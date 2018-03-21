@@ -1,5 +1,55 @@
 @import url("./reset.less");
 
-html{
+@topH: 46px;
+
+html {
     background: #dfdfdf;
+    font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+
+.design {
+    max-width: 100%;
+}
+
+
+// 顶部
+.top {
+    position: relative;
+    min-height: @topH;
+    line-height: @topH;
+    padding: 1px 0;
+    color: #fff;
+    background: linear-gradient(90deg, #a586ff, #7b4eff);
+    text-align: center;
+    .clearfix();
+    .intro {
+        // 介绍
+        position: absolute;
+        top: 1px;
+        right: 0;
+        line-height: @topH;
+        padding: 0 8px;
+        color: #fff;
+        font-size: 13px;
+    }
+}
+
+#wrap .list-bottom {
+    line-height: 30px;
+    padding: 0 0 20px;
+    text-align: center;
+    background: inherit;
+    color: #9d9d9d;
+    font-size: 10px;
+}
+
+.blur() {
+    /* Chrome, Opera */
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=2, MakeShadow=false);
+    /* IE6~IE9 */
 }

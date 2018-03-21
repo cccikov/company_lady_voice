@@ -20,4 +20,210 @@ li {
 }
 html {
   background: #dfdfdf;
+  font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+.design {
+  max-width: 100%;
+}
+.top {
+  position: relative;
+  min-height: 46px;
+  line-height: 46px;
+  padding: 1px 0;
+  color: #fff;
+  background: linear-gradient(90deg, #a586ff, #7b4eff);
+  text-align: center;
+  *zoom: 1;
+}
+.top:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.top .intro {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  line-height: 46px;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 13px;
+}
+#wrap .list-bottom {
+  line-height: 30px;
+  padding: 0 0 20px;
+  text-align: center;
+  background: inherit;
+  color: #9d9d9d;
+  font-size: 10px;
+}
+.top .top-left {
+  float: left;
+  width: 28px;
+  height: 28px;
+  margin: 12px 0 0 12px;
+  background: url(../img/index_01.png) center / contain no-repeat;
+}
+.top .top-middle {
+  overflow: hidden;
+  width: 220px;
+  line-height: 32px;
+  border-radius: 100px;
+  margin: 7px auto 0;
+  text-align: center;
+  font-size: 15px;
+  background: #a283fe;
+  *zoom: 1;
+}
+.top .top-middle.title {
+  background: none;
+}
+.top .top-middle:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.top .top-middle a {
+  float: left;
+  width: 115px;
+}
+.top .top-middle a:first-of-type {
+  margin: 0 -10px 0 0;
+}
+.top .top-middle a.active {
+  border-radius: 100px;
+  pointer-events: none;
+  background: linear-gradient(#ede9f8, #e8e2f8, #e1dbf2);
+  color: #8055ff;
+}
+.top .top-right {
+  float: right;
+  width: 28px;
+  height: 28px;
+  margin: 12px 12px 0 0px;
+  background: url(../img/index_02.png) center / contain no-repeat;
+}
+.main ul li {
+  padding: 8px 0;
+  border-top: 1px solid #dedede;
+  background: #fff;
+  *zoom: 1;
+}
+.main ul li:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.main ul li .list-left {
+  float: left;
+  position: relative;
+  padding: 0 8px;
+}
+.main ul li .list-left i {
+  display: block;
+  width: 86px;
+  height: 86px;
+  border-radius: 100px;
+  margin: 0 0 4px 0;
+  background: url(../img/test.png) center / cover no-repeat;
+}
+.main ul li .list-left span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  line-height: 16px;
+  transform: translate(-50%, 0);
+  padding: 0 5px 0 18px;
+  border-radius: 100px;
+  font-size: 13px;
+  background: #ff9999 url(../img/woman.png) left 5px center / 10px no-repeat;
+  color: #fff;
+}
+.main ul li .list-right {
+  float: right;
+  padding: 0 12px;
+  text-align: center;
+}
+.main ul li .list-right a {
+  display: block;
+  height: 24px;
+  margin: 20px 0 0;
+  background: url(../img/phone.png) center / contain no-repeat;
+}
+.main ul li .list-right strong {
+  display: block;
+  line-height: 20px;
+  color: #65c2bd;
+  font-weight: normal;
+  font-size: 10px;
+}
+.main ul li .list-right span {
+  display: block;
+  margin: 3px 0 0;
+  color: #aeaeae;
+  font-size: 12px;
+}
+.main ul li .list-middle {
+  overflow: hidden;
+  padding: 0 8px;
+  line-height: 20px;
+}
+.main ul li .list-middle h5 {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding: 0 0 0 0;
+  margin: 5px 0 0px;
+  color: #464646;
+  font-weight: 500;
+  font-size: 14px;
+}
+.main ul li .list-middle h5 span {
+  display: block;
+  margin: 0 50px 0 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.main ul li .list-middle h5 i.vip-level {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 16px;
+  width: 45px;
+  vertical-align: middle;
+  background: url(../img/vip1.png) center / contain no-repeat;
+}
+.main ul li .list-middle h5 i.vip-level.vip1 {
+  background-image: url(../img/vip1.png);
+}
+.main ul li .list-middle h5 i.vip-level.vip2 {
+  background-image: url(../img/vip2.png);
+}
+.main ul li .list-middle h5 i.vip-level.vip3 {
+  background-image: url(../img/vip3.png);
+}
+.main ul li .list-middle h5 i.vip-level.vip4 {
+  background-image: url(../img/vip4.png);
+}
+.main ul li .list-middle h5 i.vip-level.vip5 {
+  background-image: url(../img/vip5.png);
+}
+.main ul li .list-middle .audition {
+  display: inline-block;
+  line-height: 20px;
+  padding: 1px 9px 0 27px;
+  border-radius: 100px;
+  margin: 6px 0 0;
+  color: #91a7d6;
+  font-size: 14px;
+  background: #e3e3e3 url(../img/audition.png) left center / contain no-repeat;
+}
+.main ul li .list-middle .brief {
+  margin: 10px 0 0;
+  color: #9d9d9d;
+  font-size: 11px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

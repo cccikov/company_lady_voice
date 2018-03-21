@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>偷听</title>
+    <link rel="stylesheet" href="./css/overhead.css">
+    <script src="https://cccikov.github.io/cccgit/test/js/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <!-- 顶部 -->
+        <div class="top">
+            偷听
+            <a class="intro" href="###">玩法介绍</a>
+        </div>
+
+        <!-- 主要内容 -->
+        <div class="main">
+            <ul>
+                <li v-for="val in [1,2,3,4]">
+
+                    <!-- 偷听对象 -->
+                    <div class="list-left">
+                        <i class="man"></i>
+                        <i class="woman"></i>
+                        <a href="javascript:void(0)">20′18″</a>
+                    </div>
+
+                    <!-- 点赞 -->
+                    <div class="list-right">
+                        <a href="javascript:void(0)">20</a>
+                    </div>
+
+                    <!-- 标签 -->
+                    <div class="list-middle">
+                        <a class="color1" href="###">青音</a>
+                        <a class="color2" href="###">司机飙车</a>
+                        <a class="color3" href="###">攻气御姐音</a>
+                        <a class="color1" href="###">青音</a>
+                        <a class="color2" href="###">司机飙</a>
+                        <a class="color3" href="###">攻气御姐音</a>
+
+                    </div>
+                </li>
+                <li class="list-bottom">没有更多了</li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+    <img class="design" src="design/02_偷听.png" alt="首页">
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

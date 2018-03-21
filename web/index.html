@@ -7,37 +7,72 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cccikov.github.io/cccgit/test/js/vue.js"></script>
 </head>
 
 <body>
-    
+
     <div id="wrap">
 
         <!-- 顶部 -->
         <div class="top">
             <a href="javascript:void(0)" class="top-left"></a>
+            <a href="javascript:void(0)" class="top-right"></a>
             <div class="top-middle">
-                <a href="###">全部</a>
+                <a class="active" href="###">全部</a>
                 <a href="###">人气声优</a>
             </div>
-            <a href="javascript:void(0)" class="top-right"></a>
         </div>
 
-
+        <!-- 主要内容 -->
         <div class="main">
+
+            <div class="btn-list">
+                <a href="javascript:void(0)">全部</a>
+                <a href="javascript:void(0)">人气</a>
+                <a href="javascript:void(0)">情感故事</a>
+            </div>
+
+
             <ul>
-                <li>
+                <li v-for="val in [1,2,3,4]">
                     <!-- 图片 -->
                     <div class="list-left">
                         <i></i>
-                        <span></span>
+                        <span>20</span>
+                    </div>
+
+                    <!-- 电话 -->
+                    <div class="list-right">
+                        <a href="javascript:void(0)"></a>
+                        <strong>20U币/分</strong>
+                        <span>7秒前</span>
+                    </div>
+
+                    <!-- 声优介绍 -->
+                    <div class="list-middle">
+                        <h5>
+                            <i class="vip-level vip1"></i>
+                            <span>毛猴烧酒</span>
+                        </h5>
+                        <div>
+                            <a href="javascript:void(0)" class="audition">13 ″</a>
+                        </div>
+                        <p class="brief">案例三等奖阿卡丽圣诞节爱哦松紧带哦十九的阿拉斯加打开了圣诞节</p>
                     </div>
                 </li>
+                <li class="list-bottom">没有更多了</li>
             </ul>
+
+
         </div>
 
     </div>
 
+    <img class="design" src="design/01_首页_h5.png" alt="首页">
+
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
