@@ -22,6 +22,9 @@ html {
   background: #dfdfdf;
   font: 14px/1.5 Arial, Helvetica, sans-serif;
 }
+[v-cloak] {
+  display: none;
+}
 .design {
   max-width: 100%;
 }
@@ -33,6 +36,7 @@ html {
   color: #fff;
   background: linear-gradient(90deg, #a586ff, #7b4eff);
   text-align: center;
+  font-size: 16px;
   *zoom: 1;
 }
 .top:after {
@@ -48,6 +52,14 @@ html {
   padding: 0 8px;
   color: #fff;
   font-size: 13px;
+}
+.top .back {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background: url(../img/back.png) center / 21px no-repeat;
 }
 #wrap .list-bottom {
   line-height: 30px;
@@ -173,7 +185,7 @@ html {
   display: inline-block;
   max-width: 100%;
   padding: 0 0 0 0;
-  margin: 5px 0 0px;
+  margin: 6px 0 0px;
   color: #464646;
   font-weight: 500;
   font-size: 14px;
@@ -214,7 +226,7 @@ html {
   line-height: 20px;
   padding: 1px 9px 0 27px;
   border-radius: 100px;
-  margin: 6px 0 0;
+  margin: 3px 0 3px;
   color: #91a7d6;
   font-size: 14px;
   background: #e3e3e3 url(../img/audition.png) left center / contain no-repeat;

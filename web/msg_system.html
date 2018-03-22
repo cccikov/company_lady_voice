@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/msg_system.css">
+    <script src="https://cccikov.github.io/cccgit/test/js/vue.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+</head>
+
+<body>
+    <div id="wrap" v-cloak>
+        <!-- 顶部 -->
+        <div class="top">
+            <a class="back" href="javascript:history.go(-1)"></a> 系统通知
+        </div>
+        <!-- 主要内容 -->
+        <div class="main">
+            <a href="javascript:void(0)" v-for="val in [1,2,3,4,5,6,7]">
+                <h6>平安夜公告</h6>
+                <p class="time">2017-12-04 07:39</p>
+                <p class="brief">2017的平安夜，多希望你能陪在我身边，过一个浪漫的圣诞节，Merry Christmas</p>
+            </a>
+        </div>
+    </div>
+    <img class="design" src="design/03_消息_系统通知.png" alt="首页">
+</body>
+
+</html>

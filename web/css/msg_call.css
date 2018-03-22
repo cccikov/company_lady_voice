@@ -69,3 +69,39 @@ html {
   color: #9d9d9d;
   font-size: 10px;
 }
+.main a {
+  position: relative;
+  display: block;
+  line-height: 78px;
+  padding: 0 80px 0 125px;
+  border-top: 1px solid #dedede;
+  color: #464646;
+  background: #fff url(../img/misscall.png) left 12px center / 19px no-repeat;
+  font-size: 15px;
+}
+.main a i {
+  position: absolute;
+  top: 9px;
+  left: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  background: url(../img/test.png) center / contain no-repeat;
+}
+.main a span {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.main a em {
+  position: absolute;
+  top: 24px;
+  right: 10px;
+  width: 80px;
+  line-height: 15px;
+  text-align: right;
+  font-size: 12px;
+  font-style: normal;
+  color: #999;
+}
