@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* 代替base.css作为清除默认样式less */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+.mouse-hover:hover {
+  text-decoration: underline;
+}
+html {
+  background: #dfdfdf;
+  font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+[v-cloak] {
+  display: none;
+}
+.design {
+  max-width: 100%;
+}
+.top {
+  position: relative;
+  min-height: 46px;
+  line-height: 46px;
+  padding: 1px 0;
+  color: #fff;
+  background: linear-gradient(90deg, #a586ff, #7b4eff);
+  text-align: center;
+  font-size: 16px;
+  *zoom: 1;
+}
+.top:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.top .intro {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  line-height: 46px;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 13px;
+}
+.top .back {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background: url(../img/back.png) center / 21px no-repeat;
+}
+#wrap .list-bottom {
+  line-height: 30px;
+  padding: 0 0 20px;
+  text-align: center;
+  background: inherit;
+  color: #9d9d9d;
+  font-size: 10px;
+}
+body {
+  background: #fff;
+}
+.head {
+  position: relative;
+  display: block;
+  padding: 33.88888888888889% 0 0;
+  background: url(../img/me_background.png) center top / contain no-repeat;
+  color: #fff;
+}
+.head .head-contain {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 0 50px 7% 0;
+  transform: translate(0, -50%);
+  *zoom: 1;
+}
+.head .head-contain:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.head .head-contain:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 13px;
+  width: 22px;
+  height: 22px;
+  background: url(../img/back.png) center / contain no-repeat;
+  transform: rotate(180deg);
+}
+.head .head-contain i {
+  float: left;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  margin: 0 0 0 20px;
+  background: url(../img/test.png) center / contain no-repeat;
+}
+.head .head-contain .middle {
+  overflow: hidden;
+  padding: 10px 0 0 15px;
+}
+.head .head-contain .middle p {
+  line-height: 20px;
+  font-size: 15px;
+}
+.head .head-contain .middle p:nth-of-type(2) {
+  color: #cfbfff;
+  font-size: 13px;
+}
+.main .item {
+  display: block;
+  line-height: 50px;
+  border-bottom: 1px solid #e3e3e3;
+  margin: 0 15px;
+  *zoom: 1;
+}
+.main .item:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.main .item .text {
+  color: #3e3e3e;
+}
+.main .item .right-text {
+  float: right;
+  color: #a1a1a1;
+}
+.main .item .right-btn {
+  position: relative;
+  float: right;
+  width: 50px;
+  height: 26px;
+  border-radius: 100px;
+  margin: 11px 0 0 0;
+  background: #eee;
+  transition: all 0.3s;
+}
+.main .item .right-btn:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+.main .item .right-btn.active {
+  background: #61c0bb;
+}
+.main .item .right-btn.active:before {
+  top: 2px;
+  left: 26px;
+  width: 22px;
+  height: 22px;
+}
+.main a.item {
+  padding: 0 30px 0 0;
+  background: url(../img/arrow-right.png) right center / 20px no-repeat;
+}

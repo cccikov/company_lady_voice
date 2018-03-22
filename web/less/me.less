@@ -1,0 +1,104 @@
+@import url(commom.less);
+
+body {
+    background: #fff;
+}
+
+.head {
+    position: relative;
+    display: block;
+    padding: 33.88888888888889% 0 0;
+    background: url(../img/me_background.png) center top/contain no-repeat;
+    color: #fff;
+    .head-contain {
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        padding: 0 50px 7% 0;
+        transform: translate(0, -50%);
+        .clearfix();
+        &:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            right: 13px;
+            width: 22px;
+            height: 22px;
+            background: url(../img/back.png) center/contain no-repeat;
+            transform: rotate(180deg);
+        }
+        i {
+            float: left;
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+            margin: 0 0 0 20px;
+            background: url(../img/test.png) center/contain no-repeat;
+        }
+        .middle {
+            overflow: hidden;
+            padding: 10px 0 0 15px;
+            p {
+                line-height: 20px;
+                font-size: 15px;
+                &:nth-of-type(2) {
+                    color: #cfbfff;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    .item {
+        display: block;
+        line-height: 50px;
+        border-bottom: 1px solid #e3e3e3;
+        margin: 0 15px;
+        .clearfix();
+        .text {
+            color: #3e3e3e;
+        }
+        .right-text {
+            float: right;
+            color: #a1a1a1;
+        }
+        .right-btn {
+            position: relative;
+            float: right;
+            width: 50px;
+            height: 26px;
+            border-radius: 100px;
+            margin: (50-28)/2px 0 0 0;
+            background: #eee;
+            transition: all 0.3s;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                width: 18px;
+                height: 18px;
+                background: #fff;
+                border-radius: 100px;
+                transition: all 0.3s;
+            }
+            &.active {
+                background: #61c0bb;
+                &:before {
+                    top: 2px;
+                    left: 50-2-22px;
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+    a.item {
+        padding: 0 30px 0 0;
+        background: url(../img/arrow-right.png) right center/20px no-repeat;
+    }
+}
