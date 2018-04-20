@@ -1,6 +1,23 @@
 @import url("./commom.less");
 
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+#wrap {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 48px 0 0;
+}
+
 .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
     .top-left {
         float: left;
         width: 28px;
@@ -44,7 +61,40 @@
     }
 }
 
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    font-size: 14px;
+    background: #fff;
+    color: #999;
+    color: rgb(153, 153, 153);
+    .swiper-slide {
+        width: auto;
+        line-height: 40px;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+    .bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 10px;
+        width: 40px;
+        .bar-color {
+            width: 100%;
+            height: 3px;
+            background: #ff4891;
+            background: rgb(255, 72, 145);
+        }
+    }
+}
+
+
 .main {
+    height: 100%;
     ul {
         li {
             // 高度为90
