@@ -1,12 +1,12 @@
-window.onload = function(){
+window.onload = function() {
     new Vue({
-        el:"#wrap"
+        el: "#wrap"
     });
 
-     loaded();
+    loaded();
 }
 
-function loaded(){
+function loaded() {
     var nav_slides; // nav 的 slides
     var nav_width; // nav 的 container 宽度，即nav的可视宽度
     var nav_wrapper_width; // nav 的 wrapper 内容宽度
@@ -18,6 +18,9 @@ function loaded(){
     var bar_max_translate; // 滑块最大移动距离
     var speed = 300; // 触摸滑动时释放至贴合的时间 , 也是全局过渡效果的过渡时间
 
+    var active_color = [141, 102, 255]; // 活动颜色 rgba
+    var normal_color = [124, 124, 124]; // 活动颜色 rgba
+
     var nav_swiper = new Swiper(".nav", {
         slidesPerView: "auto",
         freeMode: true,
@@ -28,7 +31,7 @@ function loaded(){
                 nav_wrapper_width = this.$wrapperEl[0].scrollWidth;
 
                 nav_slides = this.slides;
-                nav_first_slide_width = parseInt(nav_slides.eq(0).css("width"));
+                nav_first_slide_width = parseInt(nav_slides.eq(0).css("color", "rgb(" + active_color[0] + "," + active_color[1] + "," + active_color[2] + ")").css("width"));
 
                 for (var i = 0, len = nav_slides.length; i < len; i++) {
                     // 获取 nav 每个slides的宽度
@@ -53,7 +56,7 @@ function loaded(){
                 bar_max_translate = nav_slides[nav_slides.length - 1].offsetLeft;
 
                 bar = this.$el.find(".bar"); // 获取滑块dom
-                bar.css("width", (nav_first_slide_width - 20) + "px"); // 设置滑块宽度
+                bar.css("width", (nav_first_slide_width - 20) + "px").find(".bar-color").css("background", "rgb(" + active_color[0] + "," + active_color[1] + "," + active_color[2] + ")"); // 设置滑块宽度
             }
         }
     });
@@ -84,9 +87,9 @@ function loaded(){
                 nav_slides.eq(active_page_index).transition(speed); // // 在touchMove的时候要设置为0 ; 否则会有延迟的感觉
                 nav_slides.eq(active_page_index + 1).transition(speed);
                 nav_slides.eq(active_page_index - 1).transition(speed);
-                nav_slides.eq(active_page_index).css("color", "rgb(255,72,145)");
-                nav_slides.eq(active_page_index + 1).css("color", "rgb(153,153,153)"); // rgb(153,153,153) 就是 #999
-                nav_slides.eq(active_page_index - 1).css("color", "rgb(153,153,153)");
+                nav_slides.eq(active_page_index).css("color", "rgb(" + active_color[0] + "," + active_color[1] + "," + active_color[2] + ")");
+                nav_slides.eq(active_page_index + 1).css("color", "rgb(" + normal_color[0] + "," + normal_color[1] + "," + normal_color[2] + ")"); // rgb(153,153,153) 就是 #999
+                nav_slides.eq(active_page_index - 1).css("color", "rgb(" + normal_color[0] + "," + normal_color[1] + "," + normal_color[2] + ")");
 
                 // nav slide活动块居中
 
@@ -141,9 +144,9 @@ function loaded(){
 
                         //slide progress 绝对值为 0 的时候颜色是255,72,145 ; 1 的时候颜色为153,153,153
                         var rate = Math.pow(page_slide_progress_abs, 1.8); // page_slide_progress_abs的变化是0-1 ; 那么他的指数也是0-1 ;  如果指数大于1 , 那么在红色的情况会多一点 (小数的平方会更小) ; 增加指数后 , 变化不再是平滑 , 效果更佳好看
-                        var r = Math.floor(255 + (153 - 255) * rate); // 初始值加上变化量
-                        var g = Math.floor(72 + (153 - 72) * rate); // 记住一定要加上 Math.floor 因为rgba只接受整数
-                        var b = Math.floor(145 + (153 - 145) * rate);
+                        var r = Math.floor(active_color[0] + (normal_color[0] - active_color[0]) * rate); // 初始值加上变化量
+                        var g = Math.floor(active_color[1] + (normal_color[1] - active_color[1]) * rate); // 记住一定要加上 Math.floor 因为rgba只接受整数
+                        var b = Math.floor(active_color[2] + (normal_color[2] - active_color[2]) * rate);
 
                         nav_slides.eq(i).transition(0);
                         nav_slides.eq(i).css("color", "rgb(" + r + "," + g + "," + b + ")");

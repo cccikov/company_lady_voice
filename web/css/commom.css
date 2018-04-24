@@ -61,6 +61,17 @@ html {
   height: 46px;
   background: url(../img/back.png) center / 21px no-repeat;
 }
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  line-height: 50px;
+  background: #fff;
+  color: blue;
+}
 #wrap .list-bottom {
   line-height: 30px;
   padding: 0 0 20px;
