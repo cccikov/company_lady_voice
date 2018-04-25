@@ -9,7 +9,11 @@ body {
 #wrap {
     height: 100%;
     box-sizing: border-box;
-    padding: 48px 0 0;
+    padding: 2+@topH 0 @footH;
+    .main{
+        height: 100%;
+        overflow: hidden;
+    }
 }
 
 .top {
@@ -94,7 +98,6 @@ body {
 
 
 .main {
-    height: 100%;
     ul {
         li {
             // 高度为90

@@ -1,12 +1,16 @@
 window.onload = function() {
     new Vue({
-        el: "#wrap"
+        el: "#wrap",
+        mounted:function(){
+            var _this = this;
+            _this.$nextTick(function(){
+                swiper_build();
+            })
+        }
     });
-
-    loaded();
 }
 
-function loaded() {
+function swiper_build() {
     var nav_slides; // nav 的 slides
     var nav_width; // nav 的 container 宽度，即nav的可视宽度
     var nav_wrapper_width; // nav 的 wrapper 内容宽度
