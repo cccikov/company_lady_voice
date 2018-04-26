@@ -101,7 +101,7 @@ ul.man {
             top: 0;
             right: 0;
             z-index: 0;
-            width: 150px;
+            width: 42%;
             height: 110px;
             background: linear-gradient(90deg, #fff, #f6e0a1);
         }
@@ -111,7 +111,7 @@ ul.man {
             top: 0;
             right: 0;
             z-index: 0;
-            width: 150px;
+            width: 42%;
             height: 110px;
             background: url(../img/20.png) right 10px center/auto 90px no-repeat;
         }
@@ -137,8 +137,7 @@ ul.man {
         .info {
             margin: 0 120px 0 15px;
             flex-direction: column;
-            align-items: stretch;
-            // column的时候
+            align-items: stretch; // column的时候
             // 如果align-items不是stretch，就代表里面的弹性元素不是沾满整行，可以超过
             .info-name-address {
                 p:nth-of-type(1) {
@@ -156,7 +155,81 @@ ul.man {
             }
         }
     }
-
+    li:nth-of-type(2),
+    li:nth-of-type(3) {
+        width: 50%;
+        a {
+            height: 110px;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 0;
+                width: 45%;
+                height: 110px;
+                background: linear-gradient(90deg, #fff, #f6e0a1);
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                top: auto;
+                right: auto;
+                bottom: 10px;
+                left: 5px;
+                z-index: 2;
+                width: 65px;
+                height: 39px;
+                background: url(../img/21.png) center/contain no-repeat;
+            }
+            .img {
+                align-self: flex-start;
+                i {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 100px;
+                    margin: 10px 5px 0;
+                }
+                span {
+                    top: 37px;
+                    bottom: auto;
+                    left: 70+5px;
+                    transform: translate(0, 0);
+                }
+            }
+            .info {
+                margin: 0 0 0 5px;
+                .info-name-address {
+                    p:nth-of-type(1) {
+                        display: block;
+                        padding: 0 0 19px 0;
+                        margin: 0 0 3px 0;
+                        background-position: left 40px bottom 2px;
+                    }
+                    p:nth-of-type(2) {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    li:nth-of-type(2){
+        a{
+            &:before{
+                background-image:linear-gradient(90deg,#fff,#d1e8ff);
+            }
+        }
+    }
+    li:nth-of-type(3){
+        a{
+            &:before{
+                background-image:linear-gradient(90deg,#fff,#e1d8ff);
+            }
+            &:after{
+                background-image:url(../img/22.png);
+            }
+        }
+    }
 }
 
 .nav_page_layout();
