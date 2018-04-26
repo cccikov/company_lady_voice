@@ -131,30 +131,30 @@ html {
 img {
   display: block;
 }
-ul.man {
+ul {
   display: flex;
   flex-wrap: wrap;
 }
-ul.man li {
+ul li {
   width: 100%;
 }
-ul.man li a {
+ul li a {
   display: flex;
   align-items: center;
   padding: 10px 15px;
   border-top: 1px solid #dedede;
   background: #fff;
 }
-ul.man li a .number {
+ul li a .number {
   color: #737373;
   font-size: 15px;
 }
-ul.man li a .img {
+ul li a .img {
   float: left;
   position: relative;
   margin: 0 12px 0 20px;
 }
-ul.man li a .img i {
+ul li a .img i {
   display: block;
   width: 60px;
   height: 60px;
@@ -162,7 +162,7 @@ ul.man li a .img i {
   margin: 0 0 4px 0;
   background: url(../img/test.png) center / cover no-repeat;
 }
-ul.man li a .img span {
+ul li a .img span {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -174,12 +174,12 @@ ul.man li a .img span {
   background: #ff9999 url(../img/woman.png) left 5px center / 9px no-repeat;
   color: #fff;
 }
-ul.man li a .img span.male {
+ul li a .img span.male {
   background-color: #6ab5ff;
   background-image: url(../img/man.png);
   background-size: 10px;
 }
-ul.man li a .info {
+ul li a .info {
   min-width: 0;
   flex-grow: 1;
   display: flex;
@@ -187,12 +187,12 @@ ul.man li a .info {
   align-items: center;
   color: #969696;
 }
-ul.man li a .info .info-name-address {
+ul li a .info .info-name-address {
   flex-grow: 1;
   flex-shrink: 1;
   min-width: 0;
 }
-ul.man li a .info .info-name-address p:nth-of-type(1) {
+ul li a .info .info-name-address p:nth-of-type(1) {
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
@@ -205,28 +205,28 @@ ul.man li a .info .info-name-address p:nth-of-type(1) {
   overflow: hidden;
   background: url(../img/vip1.png) right top 2px / auto 15px no-repeat;
 }
-ul.man li a .info .info-name-address p:nth-of-type(2) {
+ul li a .info .info-name-address p:nth-of-type(2) {
   font-size: 12px;
 }
-ul.man li a .info > p {
+ul li a .info > p {
   flex-shrink: 0;
   font-size: 12px;
 }
-ul.man li a .info > p strong {
+ul li a .info > p strong {
   padding: 0 5px;
   color: #ff7a55;
   font-weight: normal;
   font-size: 14px;
 }
-ul.man li:nth-of-type(-n+3) a {
+ul li:nth-of-type(-n+3) a {
   overflow: hidden;
   position: relative;
   padding: 0;
 }
-ul.man li:nth-of-type(-n+3) a > * {
+ul li:nth-of-type(-n+3) a > * {
   z-index: 1;
 }
-ul.man li:nth-of-type(-n+3) a:before {
+ul li:nth-of-type(-n+3) a:before {
   content: "";
   position: absolute;
   top: 0;
@@ -236,7 +236,7 @@ ul.man li:nth-of-type(-n+3) a:before {
   height: 110px;
   background: linear-gradient(90deg, #fff, #f6e0a1);
 }
-ul.man li:nth-of-type(-n+3) a:after {
+ul li:nth-of-type(-n+3) a:after {
   content: "";
   position: absolute;
   top: 0;
@@ -246,52 +246,52 @@ ul.man li:nth-of-type(-n+3) a:after {
   height: 110px;
   background: url(../img/20.png) right 10px center / auto 90px no-repeat;
 }
-ul.man li:nth-of-type(-n+3) a .number {
+ul li:nth-of-type(-n+3) a .number {
   display: none;
 }
-ul.man li:nth-of-type(-n+3) a .img {
+ul li:nth-of-type(-n+3) a .img {
   margin: 0;
   align-self: flex-start;
 }
-ul.man li:nth-of-type(-n+3) a .img i {
+ul li:nth-of-type(-n+3) a .img i {
   width: 110px;
   height: 110px;
   border-radius: 0;
   margin: 0;
 }
-ul.man li:nth-of-type(-n+3) a .img span {
+ul li:nth-of-type(-n+3) a .img span {
   top: 50%;
   bottom: auto;
   left: 125px;
   transform: translate(0, -50%);
 }
-ul.man li:nth-of-type(-n+3) a .info {
+ul li:nth-of-type(-n+3) a .info {
   margin: 0 120px 0 15px;
   flex-direction: column;
   align-items: stretch;
 }
-ul.man li:nth-of-type(-n+3) a .info .info-name-address p:nth-of-type(1) {
+ul li:nth-of-type(-n+3) a .info .info-name-address p:nth-of-type(1) {
   margin: 0 0 -3px 0;
 }
-ul.man li:nth-of-type(-n+3) a .info .info-name-address p:nth-of-type(2) {
+ul li:nth-of-type(-n+3) a .info .info-name-address p:nth-of-type(2) {
   padding: 0 0 0 45px;
 }
-ul.man li:nth-of-type(-n+3) a .info > p {
+ul li:nth-of-type(-n+3) a .info > p {
   margin: 3px 0 0;
 }
-ul.man li:nth-of-type(-n+3) a .info > p strong {
+ul li:nth-of-type(-n+3) a .info > p strong {
   padding: 0 5px 0 0;
 }
-ul.man li:nth-of-type(2),
-ul.man li:nth-of-type(3) {
+ul li:nth-of-type(2),
+ul li:nth-of-type(3) {
   width: 50%;
 }
-ul.man li:nth-of-type(2) a,
-ul.man li:nth-of-type(3) a {
+ul li:nth-of-type(2) a,
+ul li:nth-of-type(3) a {
   height: 110px;
 }
-ul.man li:nth-of-type(2) a:before,
-ul.man li:nth-of-type(3) a:before {
+ul li:nth-of-type(2) a:before,
+ul li:nth-of-type(3) a:before {
   content: "";
   position: absolute;
   top: 0;
@@ -301,8 +301,8 @@ ul.man li:nth-of-type(3) a:before {
   height: 110px;
   background: linear-gradient(90deg, #fff, #f6e0a1);
 }
-ul.man li:nth-of-type(2) a:after,
-ul.man li:nth-of-type(3) a:after {
+ul li:nth-of-type(2) a:after,
+ul li:nth-of-type(3) a:after {
   content: "";
   position: absolute;
   top: auto;
@@ -314,46 +314,46 @@ ul.man li:nth-of-type(3) a:after {
   height: 39px;
   background: url(../img/21.png) center / contain no-repeat;
 }
-ul.man li:nth-of-type(2) a .img,
-ul.man li:nth-of-type(3) a .img {
+ul li:nth-of-type(2) a .img,
+ul li:nth-of-type(3) a .img {
   align-self: flex-start;
 }
-ul.man li:nth-of-type(2) a .img i,
-ul.man li:nth-of-type(3) a .img i {
+ul li:nth-of-type(2) a .img i,
+ul li:nth-of-type(3) a .img i {
   width: 65px;
   height: 65px;
   border-radius: 100px;
   margin: 10px 5px 0;
 }
-ul.man li:nth-of-type(2) a .img span,
-ul.man li:nth-of-type(3) a .img span {
+ul li:nth-of-type(2) a .img span,
+ul li:nth-of-type(3) a .img span {
   top: 37px;
   bottom: auto;
   left: 75px;
   transform: translate(0, 0);
 }
-ul.man li:nth-of-type(2) a .info,
-ul.man li:nth-of-type(3) a .info {
+ul li:nth-of-type(2) a .info,
+ul li:nth-of-type(3) a .info {
   margin: 0 0 0 5px;
 }
-ul.man li:nth-of-type(2) a .info .info-name-address p:nth-of-type(1),
-ul.man li:nth-of-type(3) a .info .info-name-address p:nth-of-type(1) {
+ul li:nth-of-type(2) a .info .info-name-address p:nth-of-type(1),
+ul li:nth-of-type(3) a .info .info-name-address p:nth-of-type(1) {
   display: block;
   padding: 0 0 19px 0;
   margin: 0 0 3px 0;
   background-position: left 40px bottom 2px;
 }
-ul.man li:nth-of-type(2) a .info .info-name-address p:nth-of-type(2),
-ul.man li:nth-of-type(3) a .info .info-name-address p:nth-of-type(2) {
+ul li:nth-of-type(2) a .info .info-name-address p:nth-of-type(2),
+ul li:nth-of-type(3) a .info .info-name-address p:nth-of-type(2) {
   padding: 0;
 }
-ul.man li:nth-of-type(2) a:before {
+ul li:nth-of-type(2) a:before {
   background-image: linear-gradient(90deg, #fff, #d1e8ff);
 }
-ul.man li:nth-of-type(3) a:before {
+ul li:nth-of-type(3) a:before {
   background-image: linear-gradient(90deg, #fff, #e1d8ff);
 }
-ul.man li:nth-of-type(3) a:after {
+ul li:nth-of-type(3) a:after {
   background-image: url(../img/22.png);
 }
 html,
