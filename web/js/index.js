@@ -1,9 +1,13 @@
 window.onload = function() {
     new Vue({
         el: "#wrap",
-        mounted:function(){
+        data: {
+            navArr: ["全部", "人气", "情感故事", "司机飙车", "嫩妹", "猛男", "全部", "人气", "情感故事", "司机飙车", "嫩妹", "猛男"],
+            pageArr: [1, 23, 4, 5]
+        },
+        mounted: function() {
             var _this = this;
-            _this.$nextTick(function(){
+            _this.$nextTick(function() {
                 swiper_build();
             })
         }
@@ -184,7 +188,7 @@ function swiper_build() {
         var click_index = this.clickedIndex;
         var click_slide = this.slides.eq(click_index);
         page_swiper.slideTo(click_index, speed);
-        this.slides.css('color', 'rgba(153,153,153,1)');
-        click_slide.css('color', 'rgba(255,72,145,1)');
-    })
+        this.slides.css("color", "rgb(" + normal_color[0] + "," + normal_color[1] + "," + normal_color[2] + ")");
+        click_slide.css("color", "rgb(" + active_color[0] + "," + active_color[1] + "," + active_color[2] + ")");
+    });
 }

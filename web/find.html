@@ -3,22 +3,78 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>我的</title>
+    <title>发现</title>
+    <link rel="stylesheet" type="text/css" href="plugins/swiper/swiper.min.css">
     <link rel="stylesheet" href="./css/find.css">
+    <script type="text/javascript" src="plugins/swiper/swiper.min.js"></script>
     <script src="https://cccikov.github.io/cccgit/test/js/vue.js"></script>
     <script type="text/javascript" src="js/base.js"></script>
-    <script src="./js/find.js"></script>
+    <script type="text/javascript" src="js/find.js"></script>
 </head>
 
 <body>
     <div id="wrap" v-cloak>
-        
-
+        <!-- 顶部 -->
+        <div class="top">
+            发现
+        </div>
+        <!-- 主要内容 -->
+        <div class="main">
+            <div class="swiper-container nav">
+                <div class="swiper-wrapper">
+                    <a class="swiper-slide" href="javascript:void(0)">尊贵富豪榜</a>
+                    <a class="swiper-slide" href="javascript:void(0)">魅力女神榜</a>
+                    <a class="swiper-slide" href="javascript:void(0)">圈子动态</a>
+                    <div class="bar">
+                        <div class="bar-color"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container page">
+                <div class="swiper-wrapper">
+                    <!-- 尊贵富豪榜 -->
+                    <div class="swiper-slide">
+                        <ul class="man">
+                            <li v-for="val in [1,2,3,4,5,6,7,8]">
+                                <a href="###">
+                                    <span class="number">No.{{val}}</span>
+                                    <div class="img">
+                                        <i></i>
+                                        <span class="male">20</span>
+                                    </div>
+                                    <div class="info">
+                                        <div class="info-name-address">
+                                            <p>木村拓哉</p>
+                                            <p>广州·海珠区</p>
+                                        </div>
+                                        <p><strong>7992</strong>富豪值</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-bottom">没有更多了</li>
+                        </ul>
+                    </div>
+                    <!-- 魅力女神榜 -->
+                    <div class="swiper-slide">
+                        <ul>
+                            <li class="list-bottom">没有更多了</li>
+                        </ul>
+                    </div>
+                    <!-- 圈子动态 -->
+                    <div class="swiper-slide">
+                        <ul>
+                            <li class="list-bottom">没有更多了</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <bottom></bottom>
     </div>
-    <!-- <img class="design" src="design/05_我的.png" alt="首页"> -->
+    <img class="design" src="design/04_发现_富豪榜.png" alt="首页">
 </body>
 
 </html>

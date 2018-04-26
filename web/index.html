@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
-    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script type="text/javascript" src="plugins/swiper/swiper.min.js"></script>
     <script src="https://cccikov.github.io/cccgit/test/js/vue.js"></script>
     <script type="text/javascript" src="js/base.js"></script>
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div id="wrap">
+    <div id="wrap" v-cloak>
 
         <!-- 顶部 -->
         <div class="top">
@@ -31,15 +31,7 @@
         <div class="main">
             <div class="swiper-container nav">
                 <div class="swiper-wrapper">
-                    <a class="swiper-slide" href="javascript:void(0)">全部</a>
-                    <a class="swiper-slide" href="javascript:void(0)">人气</a>
-                    <a class="swiper-slide" href="javascript:void(0)">情感故事</a>
-                    <a class="swiper-slide" href="javascript:void(0)">全部</a>
-                    <a class="swiper-slide" href="javascript:void(0)">人气</a>
-                    <a class="swiper-slide" href="javascript:void(0)">情感故事</a>
-                    <a class="swiper-slide" href="javascript:void(0)">全部</a>
-                    <a class="swiper-slide" href="javascript:void(0)">人气</a>
-                    <a class="swiper-slide" href="javascript:void(0)">情感故事</a>
+                    <a class="swiper-slide" v-for="(val,index) in navArr" href="javascript:void(0)">{{val}}</a>
                     <div class="bar">
                         <div class="bar-color"></div>
                     </div>
@@ -49,10 +41,10 @@
 
             <div class="swiper-container page">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" v-for="slide in [1,2,3,4,5,6,7,8,9]">
+                    <div class="swiper-slide" v-for="(nav_val,nav_index) in navArr">
 
                         <ul>
-                            <li v-for="val in [1,2,3,4]">
+                            <li v-for="val in pageArr[nav_index]">
                                 <!-- 图片 -->
                                 <div class="list-left">
                                     <i></i>
@@ -68,7 +60,7 @@
                                 <div class="list-middle">
                                     <h5>
                                         <i class="vip-level vip1"></i>
-                                        <span>毛猴烧酒</span>
+                                        <span>毛猴烧酒{{val}}</span>
                                     </h5>
                                     <div>
                                         <a href="javascript:void(0)" class="audition">13 ″</a>

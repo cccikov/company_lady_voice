@@ -1,5 +1,95 @@
 @import url(common.less);
 
-body {
-    background: #fff;
+img {
+    display: block;
+}
+
+ul.man {
+    li a {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        border-top: 1px solid #dedede;
+        background: #fff;
+        .number {
+            color: #737373;
+            font-size: 15px;
+        }
+        .img {
+            float: left;
+            position: relative;
+            margin: 0 12px 0 20px;
+            i {
+                display: block;
+                width: 60px;
+                height: 60px;
+                border-radius: 100px;
+                margin: 0 0 4px 0;
+                background: url(../img/test.png) center/cover no-repeat;
+            }
+            span {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                line-height: 16px;
+                transform: translate(-50%, 0);
+                padding: 0px 5px 0 18px;
+                border-radius: 100px;
+                font-size: 12px;
+                background: #ff9999 url(../img/woman.png) left 5px center/9px no-repeat;
+                color: #fff;
+                &.male {
+                    background-color: #6ab5ff;
+                    background-image: url(../img/man.png);
+                    background-size: 10px;
+                }
+            }
+        }
+        .info {
+            min-width: 0; // min-width: 0;好关键
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #969696;
+            .info-name-address {
+                flex-grow: 1;
+                flex-shrink: 1;
+                min-width: 0; // min-width: 0;好关键
+                p:nth-of-type(1) {
+                    box-sizing: border-box;
+                    display: inline-block;
+                    max-width: 100%;
+                    padding: 0 40px 0 0;
+                    color: #464646;
+                    font-size: 15px;
+                    .elli();
+                    background: url(../img/vip1.png) right top 2px/auto 15px no-repeat;
+                }
+                p:nth-of-type(2) {
+                    font-size: 12px;
+                }
+            }
+            >p {
+                flex-shrink: 0;
+                font-size: 12px;
+                strong {
+                    padding: 0 5px;
+                    color: #ff7a55;
+                    font-weight: normal;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.nav_page_layout();
+
+.main .nav .bar {
+    display: flex;
+    justify-content: center;
+    .bar-color {
+        width: 60%;
+    }
 }

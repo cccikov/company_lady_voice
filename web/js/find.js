@@ -1,10 +1,13 @@
 window.onload = function() {
-    new Vue({
+    vm = new Vue({
         el: "#wrap",
-        mounted:function(){
+        mounted: function() {
             var _this = this;
-            _this.$nextTick(function(){
+            _this.$nextTick(function() {
+                swiper_build(3);
             });
         }
     });
 }
+
+

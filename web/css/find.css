@@ -70,7 +70,7 @@ html {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 55px;
+  height: 46px;
   background: #fff;
   color: #8b8b8b;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
@@ -87,7 +87,7 @@ html {
   display: block;
   width: 100%;
   height: 30px;
-  background: url(../img/footer/home.png) center / contain no-repeat;
+  background: url(../img/footer/home.png) center bottom / contain no-repeat;
 }
 .footer a:nth-of-type(1):before {
   background-image: url(../img/footer/home.png);
@@ -120,13 +120,163 @@ html {
   background-image: url(../img/footer/me_active.png);
 }
 #wrap .list-bottom {
+  display: block;
   line-height: 30px;
   padding: 0 0 20px;
-  text-align: center;
   background: inherit;
   color: #9d9d9d;
   font-size: 10px;
+  text-align: center;
 }
-body {
+img {
+  display: block;
+}
+ul.man li a {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-top: 1px solid #dedede;
   background: #fff;
+}
+ul.man li a .number {
+  color: #737373;
+  font-size: 15px;
+}
+ul.man li a .img {
+  float: left;
+  position: relative;
+  margin: 0 12px 0 20px;
+}
+ul.man li a .img i {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  margin: 0 0 4px 0;
+  background: url(../img/test.png) center / cover no-repeat;
+}
+ul.man li a .img span {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  line-height: 16px;
+  transform: translate(-50%, 0);
+  padding: 0px 5px 0 18px;
+  border-radius: 100px;
+  font-size: 12px;
+  background: #ff9999 url(../img/woman.png) left 5px center / 9px no-repeat;
+  color: #fff;
+}
+ul.man li a .img span.male {
+  background-color: #6ab5ff;
+  background-image: url(../img/man.png);
+  background-size: 10px;
+}
+ul.man li a .info {
+  min-width: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #969696;
+}
+ul.man li a .info .info-name-address {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0;
+}
+ul.man li a .info .info-name-address p:nth-of-type(1) {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  padding: 0 40px 0 0;
+  color: #464646;
+  font-size: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background: url(../img/vip1.png) right top 2px / auto 15px no-repeat;
+}
+ul.man li a .info .info-name-address p:nth-of-type(2) {
+  font-size: 12px;
+}
+ul.man li a .info > p {
+  flex-shrink: 0;
+  font-size: 12px;
+}
+ul.man li a .info > p strong {
+  padding: 0 5px;
+  color: #ff7a55;
+  font-weight: normal;
+  font-size: 14px;
+}
+html,
+body {
+  height: 100%;
+}
+#wrap {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 48px 0 46px;
+}
+#wrap .main {
+  height: 100%;
+  overflow: hidden;
+}
+#wrap .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.main {
+  box-sizing: border-box;
+  position: relative;
+  padding: 40px 0 0;
+}
+.main .nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  border-bottom: 1px solid #dedede;
+  font-size: 14px;
+  background: #fff;
+  color: #999;
+  color: #999999;
+}
+.main .nav .swiper-slide {
+  width: auto;
+  line-height: 40px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.main .nav .bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 10px;
+  width: 0px;
+}
+.main .nav .bar .bar-color {
+  width: 100%;
+  height: 3px;
+  background: #ff4891;
+}
+.main .page {
+  height: 100%;
+}
+.main .page ul {
+  height: 100%;
+  overflow: auto;
+}
+.main .nav .bar {
+  display: flex;
+  justify-content: center;
+}
+.main .nav .bar .bar-color {
+  width: 60%;
 }
