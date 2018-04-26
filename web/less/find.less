@@ -88,9 +88,6 @@ ul.man {
             }
         }
     }
-
-
-
     li:nth-of-type(-n+3) a {
         overflow: hidden;
         position: relative;
@@ -138,9 +135,11 @@ ul.man {
             }
         }
         .info {
-            margin: 0 0 0 15px;
+            margin: 0 120px 0 15px;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: stretch;
+            // column的时候
+            // 如果align-items不是stretch，就代表里面的弹性元素不是沾满整行，可以超过
             .info-name-address {
                 p:nth-of-type(1) {
                     margin: 0 0 -3px 0;

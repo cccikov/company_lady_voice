@@ -266,9 +266,9 @@ ul.man li:nth-of-type(-n+3) a .img span {
   transform: translate(0, -50%);
 }
 ul.man li:nth-of-type(-n+3) a .info {
-  margin: 0 0 0 15px;
+  margin: 0 120px 0 15px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
 }
 ul.man li:nth-of-type(-n+3) a .info .info-name-address p:nth-of-type(1) {
   margin: 0 0 -3px 0;
