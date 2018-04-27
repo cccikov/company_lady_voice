@@ -1,5 +1,9 @@
 @import url(common.less);
 
+#wrap{
+    padding: 0 0 50px;
+}
+
 .head {
     position: relative;
     display: flex;
@@ -97,9 +101,9 @@
             color: #929292;
             font-size: 11px;
             p {
-                margin:0 15px;
+                margin: 0 15px;
                 padding: 0 0 0 30px;
-                span{
+                span {
                     padding: 0 0 0 5px;
                 }
                 &.woman-worth {
@@ -119,7 +123,7 @@
                         content: "";
                         height: 12px;
                         position: relative;
-                        left:-15-30px;
+                        left: -15-30px;
                         border-left: 1px solid #b9b9b9;
                     }
                 }
@@ -129,17 +133,86 @@
 }
 
 .pictures {
-    display: none;
+    margin-top: 5px;
+    padding: 6px;
+    background: #fff;
+    a {
+        display: block;
+        height: 110px;
+        border-radius: 5px;
+        background: url(../img/test.png) center/cover no-repeat;
+    }
 }
 
 .info {
-    display: none;
+    margin-top: 5px;
+    background: #fff;
+    li {
+        display: flex;
+        line-height: 45px;
+        border-bottom: 1px solid #d8d8d8;
+        font-size: 13px;
+        &:last-of-type {
+            border-bottom: none;
+        }
+        span {
+            flex: 0 0 70px;
+            padding: 0 0 0 12px;
+            color: #9d9d9d;
+        }
+        div {
+            min-width: 0;
+            padding: 0 15px 0 0;
+            color: #444444;
+            .elli();
+            em {
+                font-style: normal;
+            }
+        }
+    }
 }
 
 .gift {
-    display: none;
+    padding-bottom: 6px;
+    margin-top: 5px;
+    background: #fff;
+    font-size: 13px;
+    color: #9d9d9d;
+    p {
+        padding: 12px 12px 6px;
+    }
+    a {
+        display: block;
+        text-align: center;
+        i {
+            display: block;
+            height: 90px;
+            background: url(../img/28.png) center/80px no-repeat;
+        }
+    }
 }
 
 .action {
-    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    a {
+        display: block;
+        line-height: 43px;
+        padding: 2px 0 0;
+        background: #7a4dff;
+        color: #fff;
+        text-align: center;
+        &:before {
+            content: "";
+            display: inline-block;
+            height: 18px;
+            width: 20px;
+            margin: -3px 5px 0 0;
+            vertical-align: middle;
+            background: url(../img/27.png) center/contain no-repeat;
+        }
+    }
 }

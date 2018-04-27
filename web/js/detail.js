@@ -4,6 +4,11 @@ window.onload = function() {
         mounted: function() {
             var _this = this;
             _this.$nextTick(function() {
+                new Swiper(".swiper",{
+                    slidesPerView:"3",
+                    spaceBetween:6,
+                    // freeMode:true
+                });
             });
         }
     });
