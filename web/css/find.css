@@ -220,7 +220,6 @@ ul.ranking li a .number {
   font-size: 15px;
 }
 ul.ranking li a .img {
-  float: left;
   position: relative;
   margin: 0 12px 0 20px;
 }
@@ -436,6 +435,69 @@ ul.daily li a {
 }
 ul.daily li a .daily-top {
   display: flex;
+  position: relative;
+  align-items: center;
+  height: 55px;
+}
+ul.daily li a .daily-top .img {
+  position: absolute;
+  top: -24px;
+  left: 12px;
+}
+ul.daily li a .daily-top .img i {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  background: url(../img/test.png) center / cover no-repeat;
+}
+ul.daily li a .daily-top .img span {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  line-height: 16px;
+  transform: translate(-50%, 0);
+  padding: 0px 5px 0 18px;
+  border-radius: 100px;
+  font-size: 12px;
+  background: #ff9999 url(../img/woman.png) left 5px center / 9px no-repeat;
+  color: #fff;
+}
+ul.daily li a .daily-top .info {
+  min-width: 0;
+  margin: 0 12px 0 90px;
+}
+ul.daily li a .daily-top .info h6 {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  padding: 0 42px 0 0;
+  margin: 0 0 -4px 0;
+  font-size: 15px;
+  font-weight: normal;
+  color: #464646;
+  background: url(../img/vip1.png) right top 1px / auto 16px no-repeat;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+ul.daily li a .daily-top .info p {
+  font-size: 11px;
+  color: #929292;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+ul.daily li a .daily-top .flower {
+  padding: 0 9px 0 19px;
+  background: url(../img/7.png) left center / contain no-repeat;
+  color: #929292;
+}
+ul.daily li a .daily-top .flower.active {
+  background-image: url(../img/8.png);
+  color: #ff7373;
 }
 ul.daily li a .daily-pic {
   height: 150px;
@@ -444,4 +506,32 @@ ul.daily li a .daily-pic {
 ul.daily li a .daily-bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  color: #929292;
+}
+ul.daily li a .daily-bottom .address {
+  padding: 2px 0 0 18px;
+  margin: 0 0 0 12px;
+  background: url(../img/18.png) left top 2px / auto 17px no-repeat;
+}
+ul.daily li a .daily-bottom .like-comment {
+  padding: 0 15px 0 0;
+}
+ul.daily li a .daily-bottom .like-comment * {
+  margin: 0 6px;
+}
+ul.daily li a .daily-bottom .like-comment .like {
+  display: inline-block;
+  padding: 2px 21px 0 0;
+  background: url(../img/like.png) right top / auto 17px no-repeat;
+}
+ul.daily li a .daily-bottom .like-comment .like.active {
+  background-image: url(../img/like_active.png);
+  color: #9c7aff;
+}
+ul.daily li a .daily-bottom .like-comment .comment {
+  display: inline-block;
+  padding: 2px 21px 0 0;
+  background: url(../img/17.png) right center / auto 17px no-repeat;
 }
