@@ -1,0 +1,88 @@
+@import url(common.less);
+
+.head {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 280-20px;
+    padding: 20px 0 0;
+    background: #fff url(../img/detail_bg.png) center top/19px repeat-x;
+    a.back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 34px;
+        height: 40px;
+        background: url(../img/arrow-left.png) center /30px no-repeat;
+    }
+
+    .img {
+        i {
+            position: relative;
+            display: block;
+            width: 140px;
+            height: 140px;
+            margin: 4px auto 30px;
+            background: url(../img/test.png) center/contain no-repeat;
+            border-radius: 100px;
+            &:after {
+                content: "";
+                position: absolute;
+                top: -4px;
+                left: -4px;
+                width: 140px;
+                height: 140px;
+                border-radius: 100px;
+                border: 4px solid rgba(255, 255, 255, 0.5);
+            }
+        }
+        span.age {
+            position: absolute;
+        }
+        span.online {
+            position: absolute;
+        }
+        a {
+            position: absolute;
+        }
+    }
+    .top-info {
+        .name {
+            display: inline-block;
+            box-sizing: border-box;
+            max-width: 80%;
+            padding: 0 50px 0 50px;
+            margin: 0 auto 0;
+            .elli();
+        }
+        .worth {
+            display: flex;
+            justify-content: center;
+            p {
+                &.woman-worth {}
+                &.man-worth {}
+                &:nth-of-type(n+2) {
+                    border-left: 1px solid #ccc;
+                }
+            }
+        }
+    }
+}
+
+.pictures {
+    display: none;
+}
+
+.info {
+    display: none;
+}
+
+.gift {
+    display: none;
+}
+
+.action {
+    display: none;
+}

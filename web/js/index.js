@@ -5,6 +5,11 @@ window.onload = function() {
             navArr: ["全部", "人气", "情感故事", "司机飙车", "嫩妹", "猛男", "全部", "人气", "情感故事", "司机飙车", "嫩妹", "猛男"],
             pageArr: [1, 23, 4, 5]
         },
+        methods: {
+            toDetail: function() {
+                document.location.href = "detail.html";
+            }
+        },
         mounted: function() {
             var _this = this;
             _this.$nextTick(function() {
