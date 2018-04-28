@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* 代替base.css作为清除默认样式less */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+.mouse-hover:hover {
+  text-decoration: underline;
+}
+html {
+  background: #dfdfdf;
+  font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+[v-cloak] {
+  display: none;
+}
+.design {
+  max-width: 100%;
+}
+.top {
+  position: relative;
+  min-height: 46px;
+  line-height: 46px;
+  padding: 1px 0;
+  color: #fff;
+  background: linear-gradient(90deg, #a586ff, #7b4eff);
+  text-align: center;
+  font-size: 16px;
+  *zoom: 1;
+}
+.top:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.top .intro {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  line-height: 46px;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 13px;
+}
+.top .back {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background: url(../img/back.png) center / 21px no-repeat;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  background: #fff;
+  color: #8b8b8b;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+.footer a {
+  flex: 1 0 auto;
+  position: relative;
+  font-size: 12px;
+  text-align: center;
+}
+.footer a.active {
+  color: #632fff;
+}
+.footer a:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 30px;
+  background: url(../img/footer/home.png) center bottom / 24px no-repeat;
+}
+.footer a:nth-of-type(1):before {
+  background-image: url(../img/footer/home.png);
+}
+.footer a:nth-of-type(1).active:before {
+  background-image: url(../img/footer/home_active.png);
+}
+.footer a:nth-of-type(2):before {
+  background-image: url(../img/footer/listen.png);
+}
+.footer a:nth-of-type(2).active:before {
+  background-image: url(../img/footer/listen_active.png);
+}
+.footer a:nth-of-type(3):before {
+  background-image: url(../img/footer/msg.png);
+}
+.footer a:nth-of-type(3).active:before {
+  background-image: url(../img/footer/msg_active.png);
+}
+.footer a:nth-of-type(4):before {
+  background-image: url(../img/footer/find.png);
+}
+.footer a:nth-of-type(4).active:before {
+  background-image: url(../img/footer/find_active.png);
+}
+.footer a:nth-of-type(5):before {
+  background-image: url(../img/footer/me.png);
+}
+.footer a:nth-of-type(5).active:before {
+  background-image: url(../img/footer/me_active.png);
+}
+#wrap .list-bottom {
+  display: block;
+  line-height: 30px;
+  padding: 0 0 20px;
+  background: inherit;
+  color: #9d9d9d;
+  font-size: 10px;
+  text-align: center;
+}
+html,
+body {
+  height: 100%;
+  background: #fff;
+}
+#wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.head {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  line-height: 49px;
+}
+.head a.back {
+  width: 33px;
+  height: 49px;
+  background: url(../img/arrow-left.png) center / 30px no-repeat;
+}
+.head a.register {
+  padding: 0 14px 0;
+  font-size: 16px;
+  color: #404040;
+}
+.main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 150px;
+  background: url(../img/6.png) center bottom / contain no-repeat;
+}
+.main .login {
+  text-align: center;
+  width: 240px;
+  margin: 0 auto;
+}
+.main .login p.country {
+  font-size: 16px;
+}
+.main .login p.country:after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  margin: -3px 0 0;
+  vertical-align: middle;
+  background: url(../img/arrow-left.png) center / contain no-repeat;
+  transform: rotate3d(0, 0, 1, -90deg);
+}
+.main .login .input-wrap {
+  margin: 24px 0;
+}
+.main .login .input-wrap label {
+  display: block;
+  padding: 0 0 0 24px;
+}
+.main .login .input-wrap label input {
+  width: 100%;
+  line-height: 2;
+  border-bottom: 1px solid #d8d8d8;
+  text-indent: 6px;
+  color: #666;
+  font-size: 15px;
+  outline: none;
+  background: none;
+}
+.main .login .input-wrap.id {
+  background: url(../img/1.png) left 2px top 5px / auto 20px no-repeat;
+}
+.main .login .input-wrap.password {
+  background: url(../img/2.png) left top 4px / auto 20px no-repeat;
+}
+.main .login .action {
+  line-height: 32px;
+  border-radius: 100px;
+  background: #7344ff;
+  font-size: 15px;
+  color: #fff;
+}
+.main .login .msg-forget {
+  margin: 12px 0 0;
+  display: flex;
+  justify-content: space-between;
+  color: #535353;
+}
+::-webkit-input-placeholder {
+  color: #959595;
+}
+::-moz-placeholder {
+  color: #959595;
+}
+:-ms-input-placeholder {
+  color: #959595;
+}
+input:-moz-placeholder {
+  color: #959595;
+}

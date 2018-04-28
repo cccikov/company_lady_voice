@@ -1,0 +1,110 @@
+@import url(common.less);
+html,
+body {
+    height: 100%;
+    background: #fff;
+}
+
+
+#wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.head {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 49px;
+    a.back {
+        width: 33px;
+        height: 49px;
+        background: url(../img/arrow-left.png) center /30px no-repeat;
+    }
+    a.register {
+        padding: 0 14px 0;
+        font-size: 16px;
+        color: #404040;
+    }
+}
+
+.main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 150px;
+    background: url(../img/6.png) center bottom/contain no-repeat;
+    .login {
+        text-align: center;
+        width: 240px;
+        margin: 0 auto;
+        p.country {
+            // padding: 0 0 0 30px;
+            font-size: 16px;
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 30px;
+                height: 20px;
+                margin: -3px 0 0;
+                vertical-align: middle;
+                background: url(../img/arrow-left.png) center/contain no-repeat;
+                transform: rotate3d(0, 0, 1, -90deg);
+            }
+        }
+        .input-wrap {
+            margin: 24px 0;
+            label {
+                display: block;
+                padding: 0 0 0 24px;
+                input {
+                    width: 100%;
+                    line-height: 2;
+                    border-bottom: 1px solid #d8d8d8;
+                    text-indent: 6px;
+                    color: #666;
+                    font-size: 15px;
+                    outline: none;
+                    background: none;
+                }
+            }
+            &.id {
+                background: url(../img/1.png) left 2px top 5px/auto 20px no-repeat;
+            }
+            &.password {
+                background: url(../img/2.png) left top 4px/auto 20px no-repeat;
+            }
+        }
+        .action {
+            line-height: 32px;
+            border-radius: 100px;
+            background: #7344ff;
+            font-size: 15px;
+            color: #fff;
+        }
+        .msg-forget {
+            margin: 12px 0 0;
+            display: flex;
+            justify-content: space-between;
+            color: #535353;
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #959595;
+}
+
+::-moz-placeholder {
+    color: #959595;
+}
+
+:-ms-input-placeholder {
+    color: #959595;
+}
+
+input:-moz-placeholder {
+    color: #959595;
+}
