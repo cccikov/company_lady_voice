@@ -76,8 +76,10 @@ html {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 .footer a {
+  flex: 1 0 auto;
   position: relative;
   font-size: 12px;
+  text-align: center;
 }
 .footer a.active {
   color: #632fff;
@@ -87,7 +89,7 @@ html {
   display: block;
   width: 100%;
   height: 30px;
-  background: url(../img/footer/home.png) center bottom / contain no-repeat;
+  background: url(../img/footer/home.png) center bottom / 24px no-repeat;
 }
 .footer a:nth-of-type(1):before {
   background-image: url(../img/footer/home.png);
@@ -293,7 +295,26 @@ html {
   overflow: hidden;
 }
 .info li div em {
+  display: inline-block;
   font-style: normal;
+  line-height: 2;
+  padding: 1px 6px 0;
+  font-size: 12px;
+}
+.info li div em.label {
+  border-radius: 5px;
+  margin-right: 5px;
+  background: #66b3ff;
+  color: #fff;
+}
+.info li div em.label:nth-of-type(n+3) {
+  background: #ff7373;
+}
+.info li div em.type {
+  border: 1px solid #ff9999;
+  border-radius: 100px;
+  margin-right: 5px;
+  color: #ff9999;
 }
 .gift {
   padding-bottom: 6px;

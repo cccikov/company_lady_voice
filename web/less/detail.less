@@ -1,6 +1,6 @@
 @import url(common.less);
 
-#wrap{
+#wrap {
     padding: 0 0 50px;
 }
 
@@ -166,7 +166,26 @@
             color: #444444;
             .elli();
             em {
+                display: inline-block;
                 font-style: normal;
+                line-height: 2;
+                padding: 1px 6px 0;
+                font-size: 12px;
+                &.label {
+                    border-radius: 5px;
+                    margin-right: 5px;
+                    background: #66b3ff;
+                    color: #fff;
+                    &:nth-of-type(n+3) {
+                        background: #ff7373;
+                    }
+                }
+                &.type {
+                    border: 1px solid #ff9999;
+                    border-radius: 100px;
+                    margin-right: 5px;
+                    color: #ff9999;
+                }
             }
         }
     }
