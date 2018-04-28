@@ -2,7 +2,7 @@ window.onload = function() {
     new Vue({
         el: "#wrap",
         data:{
-            overhead:true
+            overhear:true
         },
         methods:{
             isOverhead:function(){
