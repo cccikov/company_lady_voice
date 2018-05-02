@@ -5,8 +5,8 @@ window.onload = function() {
             overhear:true
         },
         methods:{
-            isOverhead:function(){
-                this.overhead = !this.overhead;
+            isOverhear:function(){
+                this.overhear = !this.overhear;
             }
         },
         mounted:function(){

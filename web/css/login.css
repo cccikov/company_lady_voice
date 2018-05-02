@@ -218,6 +218,40 @@ body {
   justify-content: space-between;
   color: #535353;
 }
+.main .other {
+  margin: 30px 0 0;
+  text-align: center;
+}
+.main .other p:nth-of-type(1) {
+  color: #8c8c8c;
+}
+.main .other p:nth-of-type(1):before,
+.main .other p:nth-of-type(1):after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  vertical-align: middle;
+  margin: -3px 12px 0;
+  border: 1px solid #ffc9c9;
+}
+.main .other div {
+  width: 300px;
+  margin: 10px auto;
+}
+.main .other div a {
+  display: inline-block;
+  width: 50px;
+  margin: 0 10px 0;
+}
+.main .other div a img {
+  max-width: 100%;
+}
+.main .other p {
+  color: #8c8c8c;
+}
+.main .other p a {
+  color: #ffc9c9;
+}
 ::-webkit-input-placeholder {
   color: #959595;
 }

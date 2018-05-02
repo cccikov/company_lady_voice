@@ -91,6 +91,41 @@ body {
             color: #535353;
         }
     }
+
+    .other {
+        margin:30px 0 0;
+        text-align: center;
+        p:nth-of-type(1) {
+            color: #8c8c8c;
+            &:before,
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 50px;
+                vertical-align: middle;
+                margin: -3px 12px 0;
+                border: 1px solid #ffc9c9;
+            }
+        }
+        div {
+            width: 300px;
+            margin: 10px auto;
+            a {
+                display: inline-block;
+                width: 50px;
+                margin: 0 10px 0;
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+        p {
+            color: #8c8c8c;
+            a {
+                color: #ffc9c9;
+            }
+        }
+    }
 }
 
 ::-webkit-input-placeholder {
