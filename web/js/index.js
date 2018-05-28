@@ -1,22 +1,45 @@
-window.onload = function() {
-    new Vue({
+window.onload = function () {
+    var mark_change = ""; // 标记 数据 改变的，用于判断时哪次改变数据的
+    var updated = function () {
+        console.log(mark_change);
+        if (mark_change == "getData") {
+            swiper_build();
+            updated = function () {}; // 如果不需要再因为更新数据有所操作，那么就销毁updated
+        }
+    }
+
+    var vm = new Vue({
         el: "#wrap",
         data: {
-            navArr: ["全部", "人气", "情感故事", "司机飙车", "嫩妹", "猛男", "全部", "人气", "情感故事", "司机飙车", "嫩妹", "猛男"],
+            navArr: [],
             pageArr: [1, 23, 4, 5]
         },
         methods: {
-            toDetail: function() {
+            toDetail: function () {
                 document.location.href = "detail.html";
             }
+
         },
-        mounted: function() {
+        mounted: function () {
             var _this = this;
-            _this.$nextTick(function() {
-                swiper_build();
+            _this.$nextTick(function () {
+                
+            })
+        },
+        updated: function () {
+            var _this = this;
+            _this.$nextTick(function () {
+                // Code that will run only after the
+                // entire view has been re-rendered
+                updated();
             })
         }
     });
+
+    setTimeout(function () {
+        vm.navArr = ["全部", "人气", "情感故事", "司机飙车", "嫩妹", "猛男", "全部", "人气", "情感故事", "司机飙车", "嫩妹", "猛男"];
+        mark_change = "getData";
+    }, 1000);
 }
 
 function swiper_build() {
@@ -38,7 +61,7 @@ function swiper_build() {
         slidesPerView: "auto",
         freeMode: true,
         on: {
-            init: function() {
+            init: function () {
                 nav_width = parseInt(this.$el.css("width"));
 
                 nav_wrapper_width = this.$wrapperEl[0].scrollWidth;
@@ -84,7 +107,7 @@ function swiper_build() {
         on: {
 
             // 过渡效果开始时 , 滑动松手时 , 或者手动设置切换到指定slide
-            transitionStart: function() {
+            transitionStart: function () {
                 var active_page_index = this.activeIndex; // 当前活动块的索引
                 var active_nav_position = nav_slides[active_page_index].offsetLeft; // 对应的nav应该活动的块的距离wrapper的位置
 
@@ -112,7 +135,7 @@ function swiper_build() {
 
 
             // 手指触摸移动滑块的时候
-            touchMove: function(e) {
+            touchMove: function (e) {
 
                 var page_swiper_progress = this.progress; // page的progress
 
@@ -189,7 +212,7 @@ function swiper_build() {
     // })
 
     // 点击导航的时候
-    nav_swiper.on('tap', function(e) {
+    nav_swiper.on('tap', function (e) {
         var click_index = this.clickedIndex;
         var click_slide = this.slides.eq(click_index);
         page_swiper.slideTo(click_index, speed);
