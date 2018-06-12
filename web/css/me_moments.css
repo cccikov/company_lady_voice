@@ -66,7 +66,7 @@ html {
   background: url(../img/back.png) center / 21px no-repeat;
 }
 .main {
-  padding: 46px 0 0;
+  padding-top: 46px;
 }
 .footer {
   position: fixed;
@@ -175,28 +175,50 @@ html {
   background: url(../img/arrow-right.png) center / contain no-repeat;
 }
 .main li .content .action {
+  display: none;
   position: absolute;
   top: 38px;
   right: 12px;
   z-index: 100;
   padding: 3px 12px;
-  border-radius: 12px;
-  border-top-right-radius: 0;
+  border-radius: 5px;
+  border-top-right-radius: 1px;
   background: #fff;
-  box-shadow: 0px 0px 1px #ccc;
+  border: 1px solid #ddd;
+}
+.main li .content .action.active {
+  display: block;
+}
+.main li .content .action:before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  right: -1px;
+  z-index: 99;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #e0e0e0 transparent;
+  pointer-events: none;
 }
 .main li .content .action:after {
   content: "";
   position: absolute;
-  top: -17px;
+  top: -18px;
   right: 0px;
   z-index: 99;
-  border-width: 9px 7px;
+  border-width: 9px 9px;
   border-style: solid;
   border-color: transparent transparent #fff transparent;
+  pointer-events: none;
 }
 .main li .content .action a {
   display: block;
+  line-height: 2;
+  padding: 0 6px;
+  border-bottom: 1px solid #ddd;
+}
+.main li .content .action a:last-child {
+  border: none;
 }
 .main li .bottom {
   display: flex;

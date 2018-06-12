@@ -66,7 +66,7 @@ html {
   background: url(../img/back.png) center / 21px no-repeat;
 }
 .main {
-  padding: 46px 0 0;
+  padding-top: 46px;
 }
 .footer {
   position: fixed;
@@ -137,14 +137,14 @@ html {
   font-size: 10px;
   text-align: center;
 }
-body {
-  background: #fff;
+#wrap {
+  padding-bottom: 56px;
 }
 .head {
   position: relative;
   display: block;
   padding: 33.88888888888889% 0 0;
-  background: url(../img/me_background.png) center top / contain no-repeat;
+  background: #fff url(../img/me_background.png) center top / contain no-repeat;
   color: #fff;
 }
 .head .head-contain {
@@ -191,6 +191,10 @@ body {
 .head .head-contain .middle p:nth-of-type(2) {
   color: #cfbfff;
   font-size: 13px;
+}
+.main {
+  padding: 0;
+  background: #fff;
 }
 .main .item {
   display: block;
