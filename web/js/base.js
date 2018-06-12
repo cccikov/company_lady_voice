@@ -219,3 +219,17 @@ function maskNoScroll() { // 蒙层后面内容不能翻滚
         e.preventDefault();
     });
 }
+
+
+function autoTextarea(obj,paddingHeight){
+    obj.style.overflow="hidden";
+    obj.oninput = function(){
+        obj.style.height = "auto";
+        obj.style.height = (obj.scrollHeight-paddingHeight) + "px";
+
+    }
+    obj.onpropertychange = function(){
+        obj.style.height = "auto";
+        obj.style.height = (obj.scrollHeight-paddingHeight) + "px";
+    }
+}
