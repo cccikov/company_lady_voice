@@ -86,7 +86,11 @@ html {
 
 // 顶部
 .top {
-    position: relative;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index:10;
     min-height: @topH;
     line-height: @topH;
     padding: 1px 0;
@@ -113,6 +117,10 @@ html {
         height: @topH;
         background: url(../img/back.png) center/21px no-repeat;
     }
+}
+
+.main{
+    padding:@topH 0 0;
 }
 
 .footer {

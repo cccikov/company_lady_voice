@@ -1,0 +1,107 @@
+@import url(common.less);
+
+.top {
+    z-index: 1000;
+}
+
+.main {
+    color: #464646;
+    li {
+        margin: 0 0 12px;
+        background: #fff;
+        .content {
+            position: relative;
+            padding: 12px 0;
+            p {
+                padding: 0 40px 0 15px;
+                margin: 0 0 10px;
+                .elli();
+            }
+            .pic {
+                padding: 0 15px;
+                img {
+                    display: block;
+                    max-height: 150px;
+                }
+            }
+            a.edit {
+                position: absolute;
+                top: 12px;
+                right: 12px;
+                width: 20px;
+                height: 20px;
+                transform: rotate3d(0, 0, 1, 90deg);
+                background: url(../img/arrow-right.png) center/contain no-repeat;
+            }
+            .action {
+                position: absolute;
+                top: 18+20px;
+                right: 12px;
+                z-index: 100;
+                padding: 3px 12px;
+                border-radius: 12px;
+                border-top-right-radius: 0;
+                background: #fff;
+                // border: 1px solid #ccc;
+                    box-shadow: 0px 0px 1px #ccc;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: -17px;
+                    right: 0px;
+                    z-index:99;
+                    border-width: 9px 7px;
+                    border-style: solid;
+                    border-color: transparent transparent #fff transparent;
+                }
+                a {
+                    display: block;
+                }
+            }
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 2.5;
+            padding: 0 15px;
+            border-top: 1px solid #dfdfdf;
+        }
+    }
+}
+
+.like-comment {
+    line-height: 1.5;
+    * {
+        margin: 0 6px;
+    }
+    .like {
+        display: inline-block;
+        padding: 2px 21px 0 0;
+        background: url(../img/like.png) right top/auto 17px no-repeat;
+        &.active {
+            background-image: url(../img/like_active.png);
+            color: #9c7aff;
+        }
+    }
+    .comment {
+        display: inline-block;
+        padding: 2px 21px 0 0;
+        background: url(../img/17.png) right center/auto 17px no-repeat;
+    }
+}
+
+#mark {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    &.active {
+        display: block;
+    }
+}

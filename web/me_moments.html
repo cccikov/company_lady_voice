@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的生活圈子</title>
+    <link rel="stylesheet" href="./css/me_moments.css">
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script src="./js/me_moments.js"></script>
+</head>
+
+<body>
+    <div id="wrap" v-cloak>
+        <!-- 顶部 -->
+        <div class="top">
+            <a class="back" href="javascript:history.go(-1)"></a> 我的生活圈子
+        </div>
+        <!-- 主要内容 -->
+        <ul class="main">
+            <li v-for="(val,index) of [1,2,3,4,5]">
+                <div class="content">
+                    <p>有没有一个人，总让你不经意想起他。Lorem ipsum dolor sit amet.</p>
+                    <div class="pic">
+                        <img src="img/test.png">
+                    </div>
+                    <a @click="show" class="edit" href="javascript:void(0)"></a>
+                    <div class="action">
+                        <a href="javascript:void(0)">分享</a>
+                        <a href="javascript:void(0)">编辑</a>
+                        <a href="javascript:void(0)">置顶</a>
+                        <a href="javascript:void(0)">删除</a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p>1分钟前</p>
+                    <p class="like-comment">
+                        <span class="like active">13</span>
+                        <span class="comment">12</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <div @click="hide" id="mark" :class="{active:show_mark}"></div>
+    </div>
+</body>
+
+</html>

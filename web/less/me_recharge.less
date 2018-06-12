@@ -1,0 +1,72 @@
+@import url(common.less);
+
+.orange {
+    color: #ff9900;
+}
+
+.big {
+    font-size: 16px;
+}
+
+.main {
+    ul {
+        line-height: 3.5;
+        margin: 0 0 10px;
+        background: #fff;
+        color: #646464;
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 12px;
+            border-bottom: 1px solid #d7d7d7;
+            &:last-of-type {
+                border: none;
+            }
+            .recharge {
+                line-height: 2;
+                padding: 0 15px;
+                border-radius: 100px;
+                background: #7344ff;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.payment {
+    background: #fff;
+    a {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #d7d7d7;
+        &:last-of-type {
+            border: none;
+        }
+        p:nth-of-type(2) {
+            color: #a2a2a2;
+        }
+        i.wechat,
+        i.zhifubao {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            background: url(../img/wx.png) center/50px no-repeat;
+        }
+        i.zhifubao {
+            background: url(../img/zfb.png) center/50px no-repeat;
+        }
+        div {
+            flex: 1 1 auto;
+        }
+        i.select {
+            height: 50px;
+            width: 50px;
+            background: url(../img/check.png) center/18px no-repeat;
+            &.checked {
+                background: url(../img/checked.png) center/18px no-repeat;
+            }
+        }
+    }
+}

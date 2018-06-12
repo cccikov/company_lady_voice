@@ -29,7 +29,11 @@ html {
   max-width: 100%;
 }
 .top {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
   min-height: 46px;
   line-height: 46px;
   padding: 1px 0;
@@ -60,6 +64,9 @@ html {
   width: 46px;
   height: 46px;
   background: url(../img/back.png) center / 21px no-repeat;
+}
+.main {
+  padding: 46px 0 0;
 }
 .footer {
   position: fixed;

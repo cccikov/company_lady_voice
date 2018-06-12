@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>充值</title>
+    <link rel="stylesheet" href="./css/me_recharge.css">
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script src="./js/me_recharge.js"></script>
+</head>
+
+<body>
+    <div id="wrap" v-cloak>
+        <!-- 顶部 -->
+        <div class="top">
+            <a class="back" href="javascript:history.go(-1)"></a> 充值
+        </div>
+        <!-- 主要内容 -->
+        <div class="main">
+            <ul>
+                <li>
+                    <span>我的U币</span>
+                    <span class="orange big">200</span>
+                </li>
+            </ul>
+            <ul>
+                <li v-for="(val,index) of [10,20,30,50]">
+                    <span>{{val*10}} U币</span>
+                    <a class="recharge" @click="recharge(val)">￥{{val}}</a>
+                </li>
+            </ul>
+            <div class="payment">
+                <a @click="change('zhifubao')">
+                    <i class="zhifubao"></i>
+                    <div>
+                        <p>支付宝</p>
+                        <p>安全快捷支付</p>
+                    </div>
+                    <i class="select" :class="{checked:payment_mode=='zhifubao'}"></i>
+                </a>
+                <a @click="change('wechat')">
+                    <i class="wechat"></i>
+                    <div>
+                        <p>微信</p>
+                        <p>安全快捷支付</p>
+                    </div>
+                    <i class="select" :class="{checked:payment_mode=='wechat'}"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <img class="design" src="design/05_我的_设置.png" alt="首页"> -->
+</body>
+
+</html>

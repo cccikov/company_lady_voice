@@ -212,3 +212,10 @@ function swiper_build(slidesPerView) {
         click_slide.css("color", "rgb(" + active_color[0] + "," + active_color[1] + "," + active_color[2] + ")");
     });
 }
+
+
+function maskNoScroll() { // 蒙层后面内容不能翻滚
+    document.getElementById("mark").addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    });
+}

@@ -137,42 +137,68 @@ html {
   font-size: 10px;
   text-align: center;
 }
-.main a {
-  position: relative;
-  display: block;
-  line-height: 65px;
-  padding: 0 80px 0 12px;
-  border-top: 1px solid #dedede;
+.orange {
+  color: #ff9900;
+}
+.big {
+  font-size: 16px;
+}
+.main ul {
+  line-height: 3.5;
+  margin: 0 0 10px;
+  background: #fff;
   color: #646464;
-  background: #fff url(../img/arrow-right.png) right 12px center / 22px no-repeat;
-  font-size: 15px;
 }
-.main a.msg-system span:before {
-  background-image: url(../img/system.png);
+.main ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  border-bottom: 1px solid #d7d7d7;
 }
-.main a.msg-call span:before {
-  background-image: url(../img/call.png);
+.main ul li:last-of-type {
+  border: none;
 }
-.main a span:before {
-  content: "";
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  margin: -3px 15px 0 15px;
-  background: url(../img/system.png) center / contain no-repeat;
-  vertical-align: middle;
-}
-.main a i {
-  position: absolute;
-  top: 24px;
-  right: 36px;
-  width: 17px;
-  line-height: 15px;
-  padding: 2px 0 0;
+.main ul li .recharge {
+  line-height: 2;
+  padding: 0 15px;
   border-radius: 100px;
+  background: #7344ff;
   color: #fff;
-  background: #f00;
-  font-size: 10px;
-  font-style: normal;
-  text-align: center;
+}
+.payment {
+  background: #fff;
+}
+.payment a {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d7d7d7;
+}
+.payment a:last-of-type {
+  border: none;
+}
+.payment a p:nth-of-type(2) {
+  color: #a2a2a2;
+}
+.payment a i.wechat,
+.payment a i.zhifubao {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background: url(../img/wx.png) center / 50px no-repeat;
+}
+.payment a i.zhifubao {
+  background: url(../img/zfb.png) center / 50px no-repeat;
+}
+.payment a div {
+  flex: 1 1 auto;
+}
+.payment a i.select {
+  height: 50px;
+  width: 50px;
+  background: url(../img/check.png) center / 18px no-repeat;
+}
+.payment a i.select.checked {
+  background: url(../img/checked.png) center / 18px no-repeat;
 }
