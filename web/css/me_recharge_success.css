@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* 代替base.css作为清除默认样式less */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+.mouse-hover:hover {
+  text-decoration: underline;
+}
+html {
+  background: #dfdfdf;
+  font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+[v-cloak] {
+  display: none;
+}
+.design {
+  max-width: 100%;
+}
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  min-height: 46px;
+  line-height: 46px;
+  padding: 1px 0;
+  color: #fff;
+  background: linear-gradient(90deg, #a586ff, #7b4eff);
+  text-align: center;
+  font-size: 16px;
+  *zoom: 1;
+}
+.top:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.top .intro {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  line-height: 46px;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 13px;
+}
+.top .back {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background: url(../img/back.png) center / 21px no-repeat;
+}
+.main {
+  padding-top: 46px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  background: #fff;
+  color: #8b8b8b;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+.footer a {
+  flex: 1 0 auto;
+  position: relative;
+  font-size: 12px;
+  text-align: center;
+}
+.footer a.active {
+  color: #632fff;
+}
+.footer a:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 30px;
+  background: url(../img/footer/home.png) center bottom / 24px no-repeat;
+}
+.footer a:nth-of-type(1):before {
+  background-image: url(../img/footer/home.png);
+}
+.footer a:nth-of-type(1).active:before {
+  background-image: url(../img/footer/home_active.png);
+}
+.footer a:nth-of-type(2):before {
+  background-image: url(../img/footer/listen.png);
+}
+.footer a:nth-of-type(2).active:before {
+  background-image: url(../img/footer/listen_active.png);
+}
+.footer a:nth-of-type(3):before {
+  background-image: url(../img/footer/msg.png);
+}
+.footer a:nth-of-type(3).active:before {
+  background-image: url(../img/footer/msg_active.png);
+}
+.footer a:nth-of-type(4):before {
+  background-image: url(../img/footer/find.png);
+}
+.footer a:nth-of-type(4).active:before {
+  background-image: url(../img/footer/find_active.png);
+}
+.footer a:nth-of-type(5):before {
+  background-image: url(../img/footer/me.png);
+}
+.footer a:nth-of-type(5).active:before {
+  background-image: url(../img/footer/me_active.png);
+}
+#wrap .list-bottom {
+  display: block;
+  line-height: 30px;
+  padding: 0 0 20px;
+  background: inherit;
+  color: #9d9d9d;
+  font-size: 10px;
+  text-align: center;
+}
+strong {
+  color: #ff6600;
+}
+.main {
+  padding: 66px 20px 20px;
+  background: #fff;
+  color: #646464;
+}
+.main > div {
+  line-height: 2;
+  padding: 12px 0;
+  border: 1px solid #d8caff;
+  border-radius: 8px;
+  text-align: center;
+}
+.main > div > div {
+  position: relative;
+  display: inline-block;
+  padding: 0 12px 0 62px;
+  text-align: left;
+}
+.main > div > div:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background: url(../img/checked.png) center / contain no-repeat;
+}
+.main > div > div p:nth-of-type(1) {
+  font-size: 16px;
+}
+.main > div > div p:nth-of-type(1) strong {
+  font-size: 20px;
+}
+.main > div > p {
+  margin: 20px 0 0;
+}
+.main > div > p a {
+  display: inline-block;
+  width: 80px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.main > div > p a.continue {
+  background: #00bfff;
+  color: #fff;
+}
+.main > div > p a.back {
+  background: #cccccc;
+  color: #585858;
+}

@@ -11,7 +11,6 @@ window.onload = function () {
         methods: {
             recharge: function (val) {
                 alert("测试：" + this.payment_mode + "支付" + val);
-                location.href = "me_recharge_success.html";
             },
             change: function (str) {
                 this.payment_mode = str;
