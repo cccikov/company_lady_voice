@@ -213,6 +213,7 @@ body {
 ul.ranking {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 ul.ranking li {
   width: 100%;
