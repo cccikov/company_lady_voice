@@ -22,12 +22,12 @@
         <ul class="main">
             <li v-for="(val,index) of [1,2,3,4,5]">
                 <div class="content">
-                    <p>有没有一个人，总让你不经意想起他。Lorem ipsum dolor sit amet.</p>
+                    <p>有没有一个人，总让你不经意想起他。Lorem ipsum dolor sit amet. </p>
                     <div class="pic">
                         <img src="img/test.png">
                     </div>
-                    <a @click="show" class="edit" href="javascript:void(0)"></a>
-                    <div class="action" :class="{active:show_mark}">
+                    <a @click="show(index)" class="edit" href="javascript:void(0)"></a>
+                    <div class="action" :class="{active:show_action == index}">
                         <a @click="hide" href="javascript:void(0)">分享</a>
                         <a @click="hide" href="javascript:void(0)">编辑</a>
                         <a @click="hide" href="javascript:void(0)">置顶</a>
