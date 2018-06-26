@@ -23,7 +23,7 @@ html {
   font: 14px/1.5 Arial, Helvetica, sans-serif;
 }
 [v-cloak] {
-  display: none;
+  display: none !important;
 }
 .design {
   max-width: 100%;
